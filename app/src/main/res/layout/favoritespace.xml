@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="2dp"
+    android:background="@drawable/backgroundcard">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/text_Space_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/space_name"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:background="@drawable/backgroundcard"
+            android:fontFamily="@font/kavoon">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/image_View"
+            android:layout_width="200dp"
+            android:contentDescription="@string/place_image"
+            android:layout_height="130dp"
+            android:src="@drawable/emptystar">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/text_Space_Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/noselected"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:gravity="center_vertical">
+
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/text_Space_Sector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select"
+            android:textColor="@color/grey"
+            android:textSize="15sp"
+            android:textAlignment="center">
+
+
+        </TextView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
